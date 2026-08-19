@@ -5,9 +5,9 @@ public:
         for(auto x:nums){
             mp[x]++;
         }
-        int chk = (nums.size()+1)/2;
+        int n=nums.size();
         for(auto x:mp){
-            if(x.second>=chk) return x.first;
+            if(x.second>n/2) return x.first;
         }
         return 0;
     }
